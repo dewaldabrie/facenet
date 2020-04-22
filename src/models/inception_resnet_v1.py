@@ -129,6 +129,7 @@ def reduction_b(net):
   
 def inference(images, keep_probability, phase_train=True, 
               bottleneck_layer_size=128, weight_decay=0.0, reuse=None):
+    phase_train=False
     batch_norm_params = {
         # Decay for the moving averages.
         'decay': 0.995,
